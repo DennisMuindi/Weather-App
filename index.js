@@ -11,7 +11,7 @@ const date = document.getElementById("date");
 searchBtn.addEventListener("click", async function () {
   const city = searchBar.value;
 
-  const appId = "cadc2c51e9c2c2c10d21f275735318b1";
+  const appId = "YOUR_API_KEY";
 
   const response = await fetch(
     `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${appId}&units=metric`,
